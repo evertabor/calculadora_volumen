@@ -109,11 +109,11 @@ $(document).ready(function () {
     let validar = varificarCamposC1();
 
     if (validar) {
-      var v1 = parseInt($(".v1Calc1").val());
-      var v2 = parseInt($(".v2Calc1").val());
-      var c2 = parseInt($(".c2Calc1").val());
+      var v1 = $(".v1Calc1").val()
+      var v2 = $(".v2Calc1").val()
+      var c2 = $(".c2Calc1").val()
       var resultado = (c2 * v2) / v1;
-      $(".rtCalc1").val(resultado);
+      $(".rtCalc1").val(resultado.toFixed(2));
     }
   });
   $(".calC2").click(function (e) {
@@ -121,11 +121,11 @@ $(document).ready(function () {
     let validar = varificarCamposC2();
 
     if (validar) {
-      var v1 = parseInt($(".v1Calc2").val());
-      var v2 = parseInt($(".v2Calc2").val());
-      var c1 = parseInt($(".c1Calc2").val());
+      var v1 = $(".v1Calc2").val()
+      var v2 = $(".v2Calc2").val()
+      var c1 = $(".c1Calc2").val()
       var resultado = (c1 * v1) / v2;
-      $(".rtCalc2").val(resultado);
+      $(".rtCalc2").val(resultado.toFixed(2));
     }
   });
 
@@ -135,11 +135,11 @@ $(document).ready(function () {
     let validar = varificarCamposV1();
 
     if (validar) {
-      var c1 = parseInt($(".c1Calv1").val());
-      var v2 = parseInt($(".v2Calv1").val());
-      var c2 = parseInt($(".c2Calv1").val());
+      var c1 = $(".c1Calv1").val()
+      var v2 = $(".v2Calv1").val()
+      var c2 = $(".c2Calv1").val()
       var resultado = (c2 * v2) / c1;
-      $(".rtCalv1").val(resultado);
+      $(".rtCalv1").val(resultado.toFixed(2));
     }
   });
 
@@ -148,11 +148,11 @@ $(document).ready(function () {
     let validar = varificarCamposV2();
 
     if (validar) {
-      var c1 = parseInt($(".c1Calv2").val());
-      var v1 = parseInt($(".v1Calv2").val());
-      var c2 = parseInt($(".c2Calv2").val());
+      var c1 = $(".c1Calv2").val()
+      var v1 = $(".v1Calv2").val()
+      var c2 = $(".c2Calv2").val()
       var resultado = (c1 * v1) / c2;
-      $(".rtCalv2").val(resultado);
+      $(".rtCalv2").val(resultado.toFixed(2));
     }
   });
 
