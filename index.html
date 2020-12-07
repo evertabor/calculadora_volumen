@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="logoicono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authot" content="Preservar">
+    <meta name="keywords" content="Volumen, concentracion, Preservar">
+    <meta name="description" content="Calcular el la concentracion de un volumen -- Preservar"/>
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- Boostrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body class="body">
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="logo.png" class="logoimg" alt="">
+            </picture>
+        </div>
+    </header>
+    <br><br><br><br><br><br>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Calculadora</h1>
+            <div class="text-right">
+                <a class="btn btn-secondary m-2"  id="calV1"> Calcular V1</a>
+                <a class="btn btn-secondary m-2"  id="calC2">Calcular C2</a>
+                <a class="btn btn-secondary m-2"  id="calV2">Calcular V2</a>
+                <a class="btn btn-secondary m-2"  id="calC1">Calcular C1</a>
+            </div>
+            <hr style="color: white;">
+            <div id="bie">
+                <br><br> <br>
+                <h3 class="text-center display-5">Comienza a calcular!!</h3>
+            </div>
+            <div id="contenidoV2">
+                <br>
+                <h3>Calcular el valor de V2</h3>
+                <br>
+                <div class="">
+                    <h4>Formula a calcular</h4>
+                    <br>
+                    <img src="v2.JPG" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v1">V1</label>
+                            <input class="form-control v1Calv2" type="number" name=""
+                                placeholder="Ingrese el valor de V1">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c1">C1</label>
+                            <input  class="form-control c1Calv2" type="number" name=""
+                                placeholder="Ingrese el valor de C1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c2">C2</label>
+                            <input  class="form-control c2Calv2" type="number" name=""
+                                placeholder="Ingrese el valor de C2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="rt">Respuesta</label>
+                            <input id="rtCalv2" class="form-control rtCalv2" type="number" name=""
+                                value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg calV2" type="button">Calcular</button>
+                    <button class="btn btn-danger limpiarRv2 btn-lg">Limpiar</button>
+                </div>
+
+            </div>
+            <div id="contenidoV1">
+                <br>
+                <h3>Calcular el valor de V1</h3>
+                <br>
+                <div class="">
+                    <h4>Formula a calcular</h4>
+                    <br>
+                    <img src="v1.JPG" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v2">V2</label>
+                            <input  class="form-control v2Calv1" type="text" name=""
+                                placeholder="Ingrese el valor de V2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c1">C1</label>
+                            <input  class="form-control c1Calv1" type="text" name=""
+                                placeholder="Ingrese el valor de C1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c2">C2</label>
+                            <input class="form-control c2Calv1" type="text" name=""
+                                placeholder="Ingrese el valor de C2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="rt">Respuesta</label>
+                            <input id="rt" class="form-control rtCalv1" type="text" name=""
+                                value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg calV1" type="button">Calcular</button>
+                    <button class="btn btn-danger limpiarRv1 btn-lg">Limpiar</button>
+
+                </div>
+
+            </div>
+            <div id="contenidoC1">
+                <br>
+                <h3>Calcular el valor de C1</h3>
+                <br>
+                <div class="">
+                    <h4>Formula a calcular</h4>
+                    <br>
+                    <img src="c1.JPG" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v2">V2</label>
+                            <input  class="form-control v2Calc1" type="text" name=""
+                                placeholder="Ingrese el valor de V2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v1">V1</label>
+                            <input  class="form-control v1Calc1" type="text" name=""
+                                placeholder="Ingrese el valor de V1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c2">C2</label>
+                            <input  class="form-control c2Calc1" type="text" name=""
+                                placeholder="Ingrese el valor de C2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="rt">Respuesta</label>
+                            <input class="form-control rtCalc1" type="text" name=""
+                                value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg calC1" type="button">Calcular</button>
+                    <button class="btn btn-danger limpiarRc2 btn-lg">Limpiar</button>
+                </div>
+            </div>
+            <div id="contenidoC2">
+                <br>
+                <h3>Calcular el valor de C2</h3>
+                <br>
+                <div class="">
+                    <h4>Formula a calcular</h4>
+                    <br>
+                    <img src="c2.JPG" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v2">V2</label>
+                            <input class="form-control v2Calc2" type="text" name=""
+                                placeholder="Ingrese el valor de V2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="v1">V1</label>
+                            <input  class="form-control v1Calc2" type="text" name=""
+                                placeholder="Ingrese el valor de V1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="c1">C1</label>
+                            <input  class="form-control c1Calc2" type="text" name=""
+                                placeholder="Ingrese el valor de C1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="rt">Respuesta</label>
+                            <input  class="form-control rtCalc2" type="text" name=""
+                                value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg calC2" type="button">Calcular</button>
+                    <button class="btn btn-danger limpiarRc2 btn-lg">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boostrap CDN  JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
